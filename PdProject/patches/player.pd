@@ -1,0 +1,13 @@
+#N canvas 237 275 450 300 12;
+#X obj 112 90 tgl 19 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 0 1;
+#X obj 112 136 cyclone/play~ test;
+#X obj 236 167 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
+#X msg 238 193 0;
+#X obj 110 58 inlet;
+#X obj 111 227 outlet~;
+#X connect 0 0 1 0;
+#X connect 1 0 5 0;
+#X connect 1 1 2 0;
+#X connect 2 0 3 0;
+#X connect 3 0 0 0;
+#X connect 4 0 0 0;
