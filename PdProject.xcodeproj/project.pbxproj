@@ -415,6 +415,9 @@
 		7479D31B2942784500B64BAC /* pink~-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = 7479D1842942784500B64BAC /* pink~-help.pd */; };
 		7479D31C2942784500B64BAC /* minmax~.d_fat in Resources */ = {isa = PBXBuildFile; fileRef = 7479D1852942784500B64BAC /* minmax~.d_fat */; };
 		7479D31D2942784500B64BAC /* accum-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = 7479D1862942784500B64BAC /* accum-help.pd */; };
+		74D2B95A2950E91A00724598 /* Fader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D2B9572950E91A00724598 /* Fader.swift */; };
+		74D2B95B2950E91A00724598 /* Bang.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D2B9582950E91A00724598 /* Bang.swift */; };
+		74D2B95C2950E91A00724598 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D2B9592950E91A00724598 /* ViewModel.swift */; };
 		74DE1EE129426620005AFFF3 /* PdProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DE1EE029426620005AFFF3 /* PdProjectApp.swift */; };
 		74DE1EE529426621005AFFF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74DE1EE429426621005AFFF3 /* Assets.xcassets */; };
 		74DE1EE829426621005AFFF3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74DE1EE729426621005AFFF3 /* Preview Assets.xcassets */; };
@@ -422,9 +425,11 @@
 		74DE1EF529427349005AFFF3 /* test.pd in Resources */ = {isa = PBXBuildFile; fileRef = 74DE1EF329427349005AFFF3 /* test.pd */; };
 		74DE1EF629427349005AFFF3 /* main.pd in Resources */ = {isa = PBXBuildFile; fileRef = 74DE1EF429427349005AFFF3 /* main.pd */; };
 		74DE1EF82942736B005AFFF3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DE1EF72942736B005AFFF3 /* ContentView.swift */; };
+		74DE8CAA29490A4000B6100E /* audioTest.pd in Resources */ = {isa = PBXBuildFile; fileRef = 74DE8CA929490A4000B6100E /* audioTest.pd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		746A055529491E1B00AF5000 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		7479CFF02942784400B64BAC /* mtr-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "mtr-help.pd"; sourceTree = "<group>"; };
 		7479CFF12942784400B64BAC /* pv.d_fat */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = pv.d_fat; sourceTree = "<group>"; };
 		7479CFF22942784400B64BAC /* linedrive-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "linedrive-help.pd"; sourceTree = "<group>"; };
@@ -832,6 +837,9 @@
 		7479D1842942784500B64BAC /* pink~-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "pink~-help.pd"; sourceTree = "<group>"; };
 		7479D1852942784500B64BAC /* minmax~.d_fat */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = "minmax~.d_fat"; sourceTree = "<group>"; };
 		7479D1862942784500B64BAC /* accum-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "accum-help.pd"; sourceTree = "<group>"; };
+		74D2B9572950E91A00724598 /* Fader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fader.swift; sourceTree = "<group>"; };
+		74D2B9582950E91A00724598 /* Bang.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bang.swift; sourceTree = "<group>"; };
+		74D2B9592950E91A00724598 /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		74DE1EDD29426620005AFFF3 /* PdProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PdProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74DE1EE029426620005AFFF3 /* PdProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PdProjectApp.swift; sourceTree = "<group>"; };
 		74DE1EE429426621005AFFF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -842,6 +850,7 @@
 		74DE1EF329427349005AFFF3 /* test.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = test.pd; path = patches/test.pd; sourceTree = "<group>"; };
 		74DE1EF429427349005AFFF3 /* main.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = main.pd; path = patches/main.pd; sourceTree = "<group>"; };
 		74DE1EF72942736B005AFFF3 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		74DE8CA929490A4000B6100E /* audioTest.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = audioTest.pd; path = patches/audioTest.pd; sourceTree = "<group>"; };
 		832537E2C3279DC5E0A0C52C /* Pods_PdProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PdProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C89BECAB565E82FAD4DA6674 /* Pods-PdProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PdProject.release.xcconfig"; path = "Target Support Files/Pods-PdProject/Pods-PdProject.release.xcconfig"; sourceTree = "<group>"; };
 		E578A526B59AD21CD340BC84 /* Pods-PdProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PdProject.debug.xcconfig"; path = "Target Support Files/Pods-PdProject/Pods-PdProject.debug.xcconfig"; sourceTree = "<group>"; };
@@ -1304,8 +1313,13 @@
 		74DE1EDF29426620005AFFF3 /* PdProject */ = {
 			isa = PBXGroup;
 			children = (
+				74D2B9582950E91A00724598 /* Bang.swift */,
+				74D2B9572950E91A00724598 /* Fader.swift */,
+				74D2B9592950E91A00724598 /* ViewModel.swift */,
+				746A055529491E1B00AF5000 /* Info.plist */,
 				74DE1EF429427349005AFFF3 /* main.pd */,
 				74DE1EF329427349005AFFF3 /* test.pd */,
+				74DE8CA929490A4000B6100E /* audioTest.pd */,
 				74DE1EE029426620005AFFF3 /* PdProjectApp.swift */,
 				74DE1EF72942736B005AFFF3 /* ContentView.swift */,
 				74DE1EEF29426B28005AFFF3 /* PDPatch.m */,
@@ -1352,6 +1366,8 @@
 			dependencies = (
 			);
 			name = PdProject;
+			packageProductDependencies = (
+			);
 			productName = PdProject;
 			productReference = 74DE1EDD29426620005AFFF3 /* PdProject.app */;
 			productType = "com.apple.product-type.application";
@@ -1381,6 +1397,8 @@
 				Base,
 			);
 			mainGroup = 74DE1ED429426620005AFFF3;
+			packageReferences = (
+			);
 			productRefGroup = 74DE1EDE29426620005AFFF3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -1655,6 +1673,7 @@
 				7479D2E62942784500B64BAC /* onepole~.d_fat in Resources */,
 				7479D3122942784500B64BAC /* comment-help.pd in Resources */,
 				7479D30E2942784500B64BAC /* thresh~-help.pd in Resources */,
+				74DE8CAA29490A4000B6100E /* audioTest.pd in Resources */,
 				7479D2642942784500B64BAC /* curve~.d_fat in Resources */,
 				7479D1A62942784500B64BAC /* avg~-help.pd in Resources */,
 				7479D2412942784500B64BAC /* peek~-help.pd in Resources */,
@@ -1858,8 +1877,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74D2B95A2950E91A00724598 /* Fader.swift in Sources */,
 				74DE1EF029426B28005AFFF3 /* PDPatch.m in Sources */,
+				74D2B95B2950E91A00724598 /* Bang.swift in Sources */,
 				74DE1EE129426620005AFFF3 /* PdProjectApp.swift in Sources */,
+				74D2B95C2950E91A00724598 /* ViewModel.swift in Sources */,
 				74DE1EF82942736B005AFFF3 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1994,6 +2016,7 @@
 				DEVELOPMENT_TEAM = 3UR85MK9RT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PdProject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -2027,6 +2050,7 @@
 				DEVELOPMENT_TEAM = 3UR85MK9RT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PdProject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
