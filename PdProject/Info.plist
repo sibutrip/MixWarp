@@ -3,6 +3,6 @@
 <plist version="1.0">
 <dict>
 	<key>NSMicrophoneUsageDescription</key>
-	<string>Allow to enable sound input for processing.</string>
+	<string>Enable built-in microphone for signal processing.</string>
 </dict>
 </plist>

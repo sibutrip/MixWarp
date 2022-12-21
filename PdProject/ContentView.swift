@@ -49,14 +49,22 @@ class Patch: ObservableObject {
     
     func toggleRecord(onOff: Bool) {
         let onOffFloat: Float = onOff ? 1 : 0
-        print("toggle record")
+//        print("toggle record")
         patch?.toggleRecord(onOffFloat)
     }
     
     func toggleLoop(onOff: Bool) {
         let onOffFloat: Float = onOff ? 1 : 0
-        print("toggle loop")
+//        print("toggle loop")
         patch?.toggleLoop(onOffFloat)
+    }
+    
+    func floatLoopStart(floatValue: Float) {
+        patch?.floatLoopStart(floatValue)
+    }
+    
+    func floatLoopEnd(floatValue: Float) {
+        patch?.floatLoopEnd(floatValue)
     }
     
     func floatFader(floatValue: Float) {
@@ -70,9 +78,9 @@ class Patch: ObservableObject {
         patch?.instanceIsGoofy(instanceNumber, toggle: isGoofyToggleFloat)
     }
     
-//    func sendBang() {
-//        patch?.sendBang()
-//    }
+    //    func sendBang() {
+    //        patch?.sendBang()
+    //    }
     
     func sendBangToRecord() {
         patch?.sendBangToRecord()
@@ -81,7 +89,7 @@ class Patch: ObservableObject {
     func sendBangToLoop() {
         patch?.sendBangToLoop()
     }
-
+    
     
     init() {
         for i in 1..<6 {
@@ -96,22 +104,40 @@ struct ContentView: View {
     @StateObject var vm = ViewModel()
     
     var body: some View {
-        HStack {
-            Spacer()
-            VStack {
-                Bang(isOn: $vm.bang1IsOn)
-                Text("Record is \(vm.bang1IsOn ? "ON" : "off")")
-                    .frame(width: 120)
+        VStack {
+            HStack {
+                Spacer()
+                VStack {
+                    Text("loop start")
+                    Text("\(vm.faderLoopStart)")
+                    Fader(value: $vm.faderLoopStart)
+                        .frame(height: 150.0)
+                }
+                VStack {
+                    Text("loop end")
+                    Text("\(vm.faderLoopEnd)")
+                    Fader(value: $vm.faderLoopEnd)
+                        .frame(height: 150.0)
+                }
+                Spacer()
             }
-            VStack {
-                Bang(isOn: $vm.bang2IsOn)
-                Text("Loop is \(vm.bang2IsOn ? "ON" : "off")")
-                    .frame(width: 120)
-            }
-            VStack {
-                Fader(value: $vm.fader1Value)
-                    .frame(height: 150.0)
-                Text("\(vm.fader1Value)")
+            HStack {
+                Spacer()
+                VStack {
+                    Text("Record is \(vm.toggleRecord ? "ON" : "off")")
+                        .frame(width: 120)
+                    Bang(isOn: $vm.toggleRecord)
+                }
+                VStack {
+                    Text("Loop is \(vm.toggleLoop ? "ON" : "off")")
+                        .frame(width: 120)
+                    Bang(isOn: $vm.toggleLoop)
+                }
+                VStack {
+                    Text("\(vm.faderSpeed)")
+                    Fader(value: $vm.faderSpeed)
+                        .frame(height: 150.0)
+                }
             }
         }
     }
