@@ -30,17 +30,6 @@ struct Bang: View {
                 isOn.toggle()
             }
             .modifier(BangFrameSize(bangSize: bangSize))
-//            .simultaneousGesture(
-//                DragGesture(minimumDistance: 0.0)
-//                    .onChanged({ _ in
-//                        if !isOn {
-//                            isOn = true
-//                        }
-//                    })
-//                    .onEnded({ _ in
-//                        isOn = false
-//                    })
-//            )
     }
 }
 

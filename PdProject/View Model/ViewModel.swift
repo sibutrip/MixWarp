@@ -41,9 +41,9 @@ class ViewModel: ObservableObject {
             patch.floatLoopEnd(floatValue: faderLoopEnd)
         }
     }
-    @Published var faderSpeed: Float = 0.0 {
+    @Published var faderSpeedFader: Float = 0.0 {
         didSet {
-            patch.floatFader(floatValue: faderSpeed)
+            patch.floatSpeedFader(floatValue: faderSpeedFader)
         }
     }
 }
