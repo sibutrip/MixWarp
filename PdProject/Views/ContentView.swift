@@ -8,7 +8,6 @@
 import SwiftUI
 import libpd
 
-
 struct ContentView: View {
     var pd = PdEngine()
     @StateObject var vm = ViewModel()
@@ -18,13 +17,13 @@ struct ContentView: View {
             HStack {
                 Spacer()
                 VStack {
-                    Text("loop start")
+                    Text("Start Position")
                     Text("\(vm.faderLoopStart)")
                     Fader(value: $vm.faderLoopStart)
                         .frame(height: 150.0)
                 }
                 VStack {
-                    Text("loop end")
+                    Text("End Position")
                     Text("\(vm.faderLoopEnd)")
                     Fader(value: $vm.faderLoopEnd)
                         .frame(height: 150.0)
@@ -33,20 +32,19 @@ struct ContentView: View {
             }
             HStack {
                 Spacer()
+                Record(isOn: $vm.toggleRecord)
+                    .animation(nil, value: vm.toggleRecord)
+                    .frame(width: 120)
+                Play(isOn: $vm.toggleLoop)
+                    .animation(nil, value: vm.toggleLoop)
+                    .frame(width: 120)
                 VStack {
-                    Text("Record is \(vm.toggleRecord ? "ON" : "off")")
-                        .frame(width: 120)
-                    Bang(isOn: $vm.toggleRecord)
-                }
-                VStack {
-                    Text("Loop is \(vm.toggleLoop ? "ON" : "off")")
-                        .frame(width: 120)
-                    Bang(isOn: $vm.toggleLoop)
-                }
-                VStack {
+                    Text("Loop Speed")
                     Text("\(vm.faderSpeedFader)")
-                    Fader(value: $vm.faderSpeedFader)
+                    Fader(value: $vm.faderSpeedFader, range: -5...5)
                         .frame(height: 150.0)
+                }.onTapGesture(count: 2) {
+                    vm.faderSpeedFader = Float(1)
                 }
             }
         }

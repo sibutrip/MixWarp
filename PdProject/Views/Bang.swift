@@ -21,9 +21,13 @@ struct Bang: View {
             }
             .overlay {
                 if isOn {
-                    Circle()
-                        .colorInvert()
-                        .padding(11)
+//                    Circle()
+//                        .colorInvert()
+//                        .padding(11)
+                    Image("tariq")
+                        .resizable()
+                        .scaledToFit()
+                        .clipShape(Circle())
                 }
             }
             .onTapGesture {

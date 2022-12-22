@@ -10,6 +10,7 @@ import SwiftUI
 struct Fader: View {
     @Binding var value: Float
     @State private var isDragging: Bool = false
+    @State var tapCount = 2
     
     var range: ClosedRange<Float> = 0.0...1.0
     
@@ -42,7 +43,7 @@ struct Fader: View {
             }
             .frame(width: geometry.size.width, height: geometry.size.height)
             .contentShape(Rectangle())
-            .gesture(
+            .gesture(SimultaneousGesture(
                 DragGesture(minimumDistance: 0.0)
                     .onChanged({ newValue in
                         if isDragging == false {
@@ -67,8 +68,11 @@ struct Fader: View {
                     })
                     .onEnded({ newValue in
                         isDragging = false
+                    }), TapGesture(count: tapCount)
+                    .onEnded({ _ in
+                        value = Float(1)
                     })
-            )
+            ))
         }
     }
 }

@@ -6,16 +6,13 @@
 //
 
 import Foundation
+import libpd
 
 class PdEngine {
     var pd:PdAudioController?
-    func toggleEngine() {
-        pd?.isActive = false
-    }
     init() {
         pd = PdAudioController()
         pd?.configurePlayback(withSampleRate: 48000, inputChannels: 2, outputChannels: 2, inputEnabled: true)
-        //        pd?.configureAmbient(withSampleRate: 48000, outputChannels: 2)
         pd?.isActive = true
     }
 }

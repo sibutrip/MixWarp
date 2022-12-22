@@ -11,24 +11,26 @@
 		742B74282953426F004E7966 /* PdEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742B74272953426F004E7966 /* PdEngine.swift */; };
 		742B742A29534364004E7966 /* Patch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742B742929534364004E7966 /* Patch.swift */; };
 		742B74332953444B004E7966 /* PDPatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 742B743129534416004E7966 /* PDPatch.m */; };
+		742B743C295346EC004E7966 /* audioTest.pd in Resources */ = {isa = PBXBuildFile; fileRef = 742B743B295346EC004E7966 /* audioTest.pd */; };
+		742B743E29534929004E7966 /* PlayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742B743D29534929004E7966 /* PlayButton.swift */; };
 		74D2B95A2950E91A00724598 /* Fader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D2B9572950E91A00724598 /* Fader.swift */; };
 		74D2B95B2950E91A00724598 /* Bang.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D2B9582950E91A00724598 /* Bang.swift */; };
 		74D2B95C2950E91A00724598 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D2B9592950E91A00724598 /* ViewModel.swift */; };
 		74DE1EE129426620005AFFF3 /* PdProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DE1EE029426620005AFFF3 /* PdProjectApp.swift */; };
 		74DE1EE529426621005AFFF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74DE1EE429426621005AFFF3 /* Assets.xcassets */; };
 		74DE1EE829426621005AFFF3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74DE1EE729426621005AFFF3 /* Preview Assets.xcassets */; };
-		74DE1EF529427349005AFFF3 /* test.pd in Resources */ = {isa = PBXBuildFile; fileRef = 74DE1EF329427349005AFFF3 /* test.pd */; };
-		74DE1EF629427349005AFFF3 /* main.pd in Resources */ = {isa = PBXBuildFile; fileRef = 74DE1EF429427349005AFFF3 /* main.pd */; };
 		74DE1EF82942736B005AFFF3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DE1EF72942736B005AFFF3 /* ContentView.swift */; };
-		74DE8CAA29490A4000B6100E /* audioTest.pd in Resources */ = {isa = PBXBuildFile; fileRef = 74DE8CA929490A4000B6100E /* audioTest.pd */; };
+		74E75E112953A8820014FB25 /* RecordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E75E102953A8820014FB25 /* RecordButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		742B74272953426F004E7966 /* PdEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PdEngine.swift; sourceTree = "<group>"; };
 		742B742929534364004E7966 /* Patch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patch.swift; sourceTree = "<group>"; };
-		742B743029534416004E7966 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Bridging-Header.h"; path = "Obj-C Bridges/Bridging-Header.h"; sourceTree = "<group>"; };
 		742B743129534416004E7966 /* PDPatch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDPatch.m; sourceTree = "<group>"; };
 		742B743229534416004E7966 /* PDPatch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDPatch.h; sourceTree = "<group>"; };
+		742B7434295345FF004E7966 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		742B743B295346EC004E7966 /* audioTest.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = audioTest.pd; sourceTree = "<group>"; };
+		742B743D29534929004E7966 /* PlayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayButton.swift; sourceTree = "<group>"; };
 		746A055529491E1B00AF5000 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		74D2B9572950E91A00724598 /* Fader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fader.swift; sourceTree = "<group>"; };
 		74D2B9582950E91A00724598 /* Bang.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bang.swift; sourceTree = "<group>"; };
@@ -37,10 +39,8 @@
 		74DE1EE029426620005AFFF3 /* PdProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PdProjectApp.swift; sourceTree = "<group>"; };
 		74DE1EE429426621005AFFF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74DE1EE729426621005AFFF3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		74DE1EF329427349005AFFF3 /* test.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test.pd; sourceTree = "<group>"; };
-		74DE1EF429427349005AFFF3 /* main.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.pd; sourceTree = "<group>"; };
 		74DE1EF72942736B005AFFF3 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		74DE8CA929490A4000B6100E /* audioTest.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = audioTest.pd; sourceTree = "<group>"; };
+		74E75E102953A8820014FB25 /* RecordButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordButton.swift; sourceTree = "<group>"; };
 		832537E2C3279DC5E0A0C52C /* Pods_PdProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PdProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C89BECAB565E82FAD4DA6674 /* Pods-PdProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PdProject.release.xcconfig"; path = "Target Support Files/Pods-PdProject/Pods-PdProject.release.xcconfig"; sourceTree = "<group>"; };
 		E578A526B59AD21CD340BC84 /* Pods-PdProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PdProject.debug.xcconfig"; path = "Target Support Files/Pods-PdProject/Pods-PdProject.debug.xcconfig"; sourceTree = "<group>"; };
@@ -71,6 +71,8 @@
 			isa = PBXGroup;
 			children = (
 				74D2B9582950E91A00724598 /* Bang.swift */,
+				742B743D29534929004E7966 /* PlayButton.swift */,
+				74E75E102953A8820014FB25 /* RecordButton.swift */,
 				74D2B9572950E91A00724598 /* Fader.swift */,
 				74DE1EF72942736B005AFFF3 /* ContentView.swift */,
 			);
@@ -97,9 +99,7 @@
 		742B742E295343CF004E7966 /* PDFiles */ = {
 			isa = PBXGroup;
 			children = (
-				74DE1EF429427349005AFFF3 /* main.pd */,
-				74DE1EF329427349005AFFF3 /* test.pd */,
-				74DE8CA929490A4000B6100E /* audioTest.pd */,
+				742B743B295346EC004E7966 /* audioTest.pd */,
 			);
 			path = PDFiles;
 			sourceTree = "<group>";
@@ -127,14 +127,14 @@
 			children = (
 				746A055529491E1B00AF5000 /* Info.plist */,
 				74DE1EE029426620005AFFF3 /* PdProjectApp.swift */,
-				742B743129534416004E7966 /* PDPatch.m */,
-				742B743229534416004E7966 /* PDPatch.h */,
-				742B743029534416004E7966 /* Bridging-Header.h */,
 				742B742D295343C5004E7966 /* Models */,
 				742B742C295343B8004E7966 /* View Model */,
 				742B742B295343A8004E7966 /* Views */,
 				742B742E295343CF004E7966 /* PDFiles */,
 				74DE1EE429426621005AFFF3 /* Assets.xcassets */,
+				742B743229534416004E7966 /* PDPatch.h */,
+				742B743129534416004E7966 /* PDPatch.m */,
+				742B7434295345FF004E7966 /* Bridging-Header.h */,
 				74DE1EE629426621005AFFF3 /* Preview Content */,
 			);
 			path = PdProject;
@@ -221,10 +221,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74DE1EF529427349005AFFF3 /* test.pd in Resources */,
 				74DE1EE829426621005AFFF3 /* Preview Assets.xcassets in Resources */,
-				74DE1EF629427349005AFFF3 /* main.pd in Resources */,
-				74DE8CAA29490A4000B6100E /* audioTest.pd in Resources */,
+				742B743C295346EC004E7966 /* audioTest.pd in Resources */,
 				74DE1EE529426621005AFFF3 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,7 +278,9 @@
 			files = (
 				742B74332953444B004E7966 /* PDPatch.m in Sources */,
 				742B74282953426F004E7966 /* PdEngine.swift in Sources */,
+				742B743E29534929004E7966 /* PlayButton.swift in Sources */,
 				74D2B95A2950E91A00724598 /* Fader.swift in Sources */,
+				74E75E112953A8820014FB25 /* RecordButton.swift in Sources */,
 				74D2B95B2950E91A00724598 /* Bang.swift in Sources */,
 				74DE1EE129426620005AFFF3 /* PdProjectApp.swift in Sources */,
 				74D2B95C2950E91A00724598 /* ViewModel.swift in Sources */,

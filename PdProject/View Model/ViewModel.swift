@@ -11,8 +11,8 @@ class ViewModel: ObservableObject {
     var patch = Patch()
     @Published var toggleRecord: Bool = false {
         willSet {
-            if toggleLoop {
-                toggleLoop = false
+            if self.toggleLoop {
+                self.toggleLoop = false
             }
         }
         didSet {
@@ -21,8 +21,8 @@ class ViewModel: ObservableObject {
     }
     @Published var toggleLoop: Bool = false {
         willSet {
-            if toggleRecord {
-                toggleRecord = false
+            if self.toggleRecord {
+                self.toggleRecord = false
             }
         }
         didSet {
