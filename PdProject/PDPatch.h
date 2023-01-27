@@ -20,6 +20,8 @@
 -(void)floatLoopEnd:(float)floatValue;
 -(void)sendBangToLoop;
 -(void)sendBangToRecord;
+-(void)floatTransportSliderStart:(float)floatValue;
+-(void)floatTransportSliderEnd:(float)floatValue;
 
 -(instancetype)initWithFile:(NSString *)pdFile;
 

@@ -12,6 +12,7 @@ struct PdProjectApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+//            TransportSlider_Previews_Controller()
         }
     }
 }

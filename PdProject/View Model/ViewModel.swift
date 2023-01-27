@@ -36,14 +36,30 @@ class ViewModel: ObservableObject {
         }
     }
     
-    @Published var faderLoopEnd: Float = 0.0 {
+    @Published var faderLoopEnd: Float = 1.0 {
         didSet {
             patch.floatLoopEnd(floatValue: faderLoopEnd)
         }
     }
-    @Published var faderSpeedFader: Float = 0.0 {
+    @Published var faderSpeedFader: Float = 1.0 {
         didSet {
             patch.floatSpeedFader(floatValue: faderSpeedFader)
+        }
+    }
+    @Published var transportSliderStart: Float = 1  {
+        didSet {
+            var sliderStart = (transportSliderStart - 1 / 15) * 15 / 14
+            sliderStart = (sliderStart * -1) + 1
+            print(sliderStart)
+            patch.floatTransportSliderStart(floatValue: sliderStart)
+        }
+    }
+    @Published var transportSliderEnd: Float = 0 {
+        didSet {
+            var sliderEnd = transportSliderEnd * 15/14
+            sliderEnd = (sliderEnd * -1) + 1
+            print(sliderEnd)
+            patch.floatTransportSliderEnd(floatValue: sliderEnd)
         }
     }
 }

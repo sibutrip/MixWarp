@@ -32,6 +32,12 @@
 -(void)floatLoopEnd:(float)floatValue {
     [PdBase sendFloat: floatValue toReceiver: @"floatLoopEnd"];
 }
+-(void)floatTransportSliderStart:(float)floatValue {
+    [PdBase sendFloat: floatValue toReceiver: @"floatLoopStart"];
+}
+-(void)floatTransportSliderEnd:(float)floatValue {
+    [PdBase sendFloat: floatValue toReceiver: @"floatLoopEnd"];
+}
 
 -(void)sendBangToLoop{
     [PdBase sendBangToReceiver:@"toggleLoop"];

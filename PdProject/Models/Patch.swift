@@ -39,4 +39,12 @@ class Patch: ObservableObject {
     func sendBangToLoop() {
         patch?.sendBangToLoop()
     }
+    
+    func floatTransportSliderStart(floatValue: Float) {
+        patch?.floatTransportSliderStart(floatValue)
+    }
+    
+    func floatTransportSliderEnd(floatValue: Float) {
+        patch?.floatTransportSliderEnd(floatValue)
+    }
 }

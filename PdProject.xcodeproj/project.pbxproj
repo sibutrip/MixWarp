@@ -13,6 +13,7 @@
 		742B74332953444B004E7966 /* PDPatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 742B743129534416004E7966 /* PDPatch.m */; };
 		742B743C295346EC004E7966 /* audioTest.pd in Resources */ = {isa = PBXBuildFile; fileRef = 742B743B295346EC004E7966 /* audioTest.pd */; };
 		742B743E29534929004E7966 /* PlayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742B743D29534929004E7966 /* PlayButton.swift */; };
+		74491F0F2954EAAE00DB728C /* TransportSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74491F0E2954EAAE00DB728C /* TransportSlider.swift */; };
 		74D2B95A2950E91A00724598 /* Fader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D2B9572950E91A00724598 /* Fader.swift */; };
 		74D2B95B2950E91A00724598 /* Bang.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D2B9582950E91A00724598 /* Bang.swift */; };
 		74D2B95C2950E91A00724598 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D2B9592950E91A00724598 /* ViewModel.swift */; };
@@ -31,6 +32,7 @@
 		742B7434295345FF004E7966 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		742B743B295346EC004E7966 /* audioTest.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = audioTest.pd; sourceTree = "<group>"; };
 		742B743D29534929004E7966 /* PlayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayButton.swift; sourceTree = "<group>"; };
+		74491F0E2954EAAE00DB728C /* TransportSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportSlider.swift; sourceTree = "<group>"; };
 		746A055529491E1B00AF5000 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		74D2B9572950E91A00724598 /* Fader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fader.swift; sourceTree = "<group>"; };
 		74D2B9582950E91A00724598 /* Bang.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bang.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				74E75E102953A8820014FB25 /* RecordButton.swift */,
 				74D2B9572950E91A00724598 /* Fader.swift */,
 				74DE1EF72942736B005AFFF3 /* ContentView.swift */,
+				74491F0E2954EAAE00DB728C /* TransportSlider.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 				74DE1EE129426620005AFFF3 /* PdProjectApp.swift in Sources */,
 				74D2B95C2950E91A00724598 /* ViewModel.swift in Sources */,
 				742B742A29534364004E7966 /* Patch.swift in Sources */,
+				74491F0F2954EAAE00DB728C /* TransportSlider.swift in Sources */,
 				74DE1EF82942736B005AFFF3 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

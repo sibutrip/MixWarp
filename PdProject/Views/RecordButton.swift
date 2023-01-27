@@ -14,7 +14,7 @@ struct Record: View {
     
     var body: some View {
         Image(systemName: imageName)
-            .font(.system(size: isTapped ? 100 : 88))
+            .font(.system(size: isTapped ? 80 : 88))
             .animation(.easeInOut(duration: 0.08), value: isTapped)
             .simultaneousGesture(
                 DragGesture(minimumDistance: 0.0)
