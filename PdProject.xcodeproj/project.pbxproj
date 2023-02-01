@@ -17,6 +17,7 @@
 		74D2B95A2950E91A00724598 /* Fader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D2B9572950E91A00724598 /* Fader.swift */; };
 		74D2B95B2950E91A00724598 /* Bang.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D2B9582950E91A00724598 /* Bang.swift */; };
 		74D2B95C2950E91A00724598 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D2B9592950E91A00724598 /* ViewModel.swift */; };
+		74DCC22E2989B89400D0260B /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DCC22D2989B89400D0260B /* Colors.swift */; };
 		74DE1EE129426620005AFFF3 /* PdProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DE1EE029426620005AFFF3 /* PdProjectApp.swift */; };
 		74DE1EE529426621005AFFF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74DE1EE429426621005AFFF3 /* Assets.xcassets */; };
 		74DE1EE829426621005AFFF3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74DE1EE729426621005AFFF3 /* Preview Assets.xcassets */; };
@@ -37,6 +38,7 @@
 		74D2B9572950E91A00724598 /* Fader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fader.swift; sourceTree = "<group>"; };
 		74D2B9582950E91A00724598 /* Bang.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bang.swift; sourceTree = "<group>"; };
 		74D2B9592950E91A00724598 /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		74DCC22D2989B89400D0260B /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		74DE1EDD29426620005AFFF3 /* PdProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PdProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74DE1EE029426620005AFFF3 /* PdProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PdProjectApp.swift; sourceTree = "<group>"; };
 		74DE1EE429426621005AFFF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 		742B742B295343A8004E7966 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				74DCC22D2989B89400D0260B /* Colors.swift */,
 				74D2B9582950E91A00724598 /* Bang.swift */,
 				742B743D29534929004E7966 /* PlayButton.swift */,
 				74E75E102953A8820014FB25 /* RecordButton.swift */,
@@ -280,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				742B74332953444B004E7966 /* PDPatch.m in Sources */,
+				74DCC22E2989B89400D0260B /* Colors.swift in Sources */,
 				742B74282953426F004E7966 /* PdEngine.swift in Sources */,
 				742B743E29534929004E7966 /* PlayButton.swift in Sources */,
 				74D2B95A2950E91A00724598 /* Fader.swift in Sources */,

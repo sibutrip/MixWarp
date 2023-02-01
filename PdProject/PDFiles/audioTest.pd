@@ -1,4 +1,4 @@
-#N canvas 5 44 1507 856 12;
+#N canvas 5 41 1507 856 12;
 #X declare -path counter;
 #X declare -path count~;
 #X declare -path zerox~;

@@ -10,13 +10,13 @@ import SwiftUI
 struct Play: View {
     @Binding var isOn: Bool
     @State var isTapped = false
-    @State var imageName = "stop.fill"
+    @State var imageName = "pause.fill"
     
     var body: some View {
         Image(systemName: imageName)
             .font(.system(size: isTapped ? 88 : 100))
             .onChange(of: isOn, perform: { newValue in
-                imageName = newValue ? "play.fill" : "stop.fill"
+                imageName = newValue ? "play.fill" : "pause.fill"
             })
             .animation(.easeInOut(duration: 0.08), value: isTapped)
             .animation(nil, value: isOn)
@@ -29,14 +29,14 @@ struct Play: View {
                     })
                     .onEnded({ _ in
                         isOn.toggle()
-                        imageName = isOn ? "play.fill" : "stop.fill"
+                        imageName = isOn ? "play.fill" : "pause.fill"
                         withAnimation {
                             isTapped = false
                         }
                         
                     })
             )
-            .foregroundColor(isOn ? .green : .gray)
+            .foregroundColor(isOn ? .playButtonOn : .playRecordOff)
     }
 }
 

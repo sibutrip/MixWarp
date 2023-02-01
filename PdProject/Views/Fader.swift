@@ -36,7 +36,7 @@ struct Fader: View {
                 Rectangle()
                     .frame(width: 5.0)
                 RoundedRectangle(cornerRadius: 5.0)
-                    .foregroundColor(isDragging ? .red : .primary)
+                    .foregroundColor(isDragging ? .primary : .faderKnobOff)
                     .frame(width: 60.0)
                     .frame(height: 20.0)
                     .offset(y: CGFloat((rangeMid - value) / (rangeMax - rangeMin)) * geometry.size.height)
@@ -49,21 +49,15 @@ struct Fader: View {
                         if isDragging == false {
                             isDragging = true
                         }
-                        
                         let difference = newValue.location.y
-                        
                         let scaledDifference = difference / geometry.size.height * CGFloat(rangeDifference)
-                        
                         var newValue = rangeMax - Float(scaledDifference)
-                        
                         if newValue > rangeMax {
                             newValue = rangeMax
                         }
-                        
                         if newValue < rangeMin {
                             newValue = rangeMin
                         }
-                        
                         value = newValue
                     })
                     .onEnded({ newValue in
@@ -73,6 +67,23 @@ struct Fader: View {
                         value = Float(1)
                     })
             ))
+            .padding(.vertical)
+            .background {
+                ZStack {
+                    RoundedRectangle(cornerRadius: 10)
+                        .frame(width: 120)
+                        .foregroundStyle(LinearGradient(colors: [.faderBackground,.faderBackgroundBlend,.faderBackground], startPoint: UnitPoint(x: 0.0, y: 0.0), endPoint: UnitPoint(x: 1.0, y: 0.0)))
+                    RoundedRectangle(cornerRadius: 10)
+                        .frame(width: 120)
+                        .foregroundStyle(LinearGradient(colors: [.faderBackground,.faderBackgroundBlend,.faderBackground], startPoint: UnitPoint(x: 0.0, y: 0.0), endPoint: UnitPoint(x: 0.0, y: 1.0)))
+                    ZStack {
+                        RoundedRectangle(cornerRadius: 10)
+                            .frame(width: 120)
+                            .foregroundColor(.gray2)
+                    }.opacity(0.5)
+                    .blendMode(.multiply)
+                }
+            }
         }
     }
 }

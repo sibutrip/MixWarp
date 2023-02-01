@@ -31,7 +31,7 @@ struct Record: View {
                         
                     })
             )
-            .foregroundColor(isOn ? .red : .gray)
+            .foregroundColor(isOn ? .recordButtonOn : .playRecordOff)
     }
 }
 
