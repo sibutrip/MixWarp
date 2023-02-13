@@ -22,6 +22,10 @@
 -(void)sendBangToRecord;
 -(void)floatTransportSliderStart:(float)floatValue;
 -(void)floatTransportSliderEnd:(float)floatValue;
+-(void)floatDelayTime:(float)floatValue;
+-(void)floatDelayAmount:(float)floatValue;
+
+
 
 -(instancetype)initWithFile:(NSString *)pdFile;
 

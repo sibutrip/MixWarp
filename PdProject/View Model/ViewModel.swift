@@ -62,4 +62,16 @@ class ViewModel: ObservableObject {
             patch.floatTransportSliderEnd(floatValue: sliderEnd)
         }
     }
+    
+    @Published var delayTime: Float = 0 {
+        didSet {
+            patch.floatDelayTime(floatValue: delayTime)
+        }
+    }
+    
+    @Published var delayAmount: Float = 0 {
+        didSet {
+            patch.floatDelayAmount(floatValue: delayAmount)
+        }
+    }
 }

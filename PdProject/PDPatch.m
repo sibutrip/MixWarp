@@ -51,6 +51,14 @@
     [PdBase sendList:list toReceiver:@"instanceIsGoofy"];
 }
 
+-(void)floatDelayTime:(float)floatValue {
+    [PdBase sendFloat: floatValue toReceiver: @"delayTime"];
+}
+
+-(void)floatDelayAmount:(float)floatValue {
+    [PdBase sendFloat: floatValue toReceiver: @"delayAmount"];
+}
+
 
 -(instancetype)initWithFile:(NSString *)pdFile{
     void *patch;

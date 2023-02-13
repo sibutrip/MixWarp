@@ -36,7 +36,7 @@ struct Fader: View {
                 Rectangle()
                     .frame(width: 5.0)
                 RoundedRectangle(cornerRadius: 5.0)
-                    .foregroundColor(isDragging ? .primary : .faderKnobOff)
+                    .foregroundColor(isDragging ? .faderKnobOff : .primary)
                     .frame(width: 60.0)
                     .frame(height: 20.0)
                     .offset(y: CGFloat((rangeMid - value) / (rangeMax - rangeMin)) * geometry.size.height)

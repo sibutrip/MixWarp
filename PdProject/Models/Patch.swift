@@ -47,4 +47,12 @@ class Patch: ObservableObject {
     func floatTransportSliderEnd(floatValue: Float) {
         patch?.floatTransportSliderEnd(floatValue)
     }
+    
+    func floatDelayTime(floatValue: Float) {
+        patch?.floatDelayTime(floatValue)
+    }
+    
+    func floatDelayAmount(floatValue: Float) {
+        patch?.floatDelayAmount(floatValue)
+    }
 }
