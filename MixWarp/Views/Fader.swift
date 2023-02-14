@@ -36,9 +36,9 @@ struct Fader: View {
                 Rectangle()
                     .frame(width: 5.0)
                 RoundedRectangle(cornerRadius: 5.0)
-                    .foregroundColor(isDragging ? .faderKnobOff : .primary)
                     .frame(width: 60.0)
                     .frame(height: 20.0)
+                    .foregroundColor(isDragging ? .faderKnobOff : .primary)
                     .offset(y: CGFloat((rangeMid - value) / (rangeMax - rangeMin)) * geometry.size.height)
             }
             .frame(width: geometry.size.width, height: geometry.size.height)
@@ -80,6 +80,11 @@ struct Fader: View {
                         RoundedRectangle(cornerRadius: 10)
                             .frame(width: 120)
                             .foregroundColor(.gray2)
+                            .overlay {
+                                Image("texture")
+                                    .resizable()
+                                    .cornerRadius(10)
+                            }
                     }.opacity(0.5)
                     .blendMode(.multiply)
                 }

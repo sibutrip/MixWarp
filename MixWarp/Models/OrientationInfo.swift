@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import SwiftUI
 
 final class OrientationInfo: ObservableObject {
     enum Orientation {
@@ -14,16 +15,16 @@ final class OrientationInfo: ObservableObject {
         case landscape
     }
     
-    @Published var orientation: Orientation
+    @Published var orientation = Orientation.portrait
     
     private var _observer: NSObjectProtocol?
     
     init() {
-        // fairly arbitrary starting value for 'flat' orientations
         if UIDevice.current.orientation.isLandscape {
             self.orientation = .landscape
-        }
-        else {
+        } else if UIDevice.current.orientation.isFlat {
+            self.orientation = .portrait
+        } else {
             self.orientation = .portrait
         }
         
@@ -32,11 +33,13 @@ final class OrientationInfo: ObservableObject {
             guard let device = note.object as? UIDevice else {
                 return
             }
-            if device.orientation.isPortrait {
-                self.orientation = .portrait
-            }
-            else if device.orientation.isLandscape {
+            if device.orientation.isLandscape {
                 self.orientation = .landscape
+            }
+            else if device.orientation.isPortrait {
+                self.orientation = .portrait
+            } else {
+                self.orientation = .portrait
             }
         }
     }

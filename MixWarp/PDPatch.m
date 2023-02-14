@@ -59,6 +59,10 @@
     [PdBase sendFloat: floatValue toReceiver: @"delayAmount"];
 }
 
+-(void)bangClearDelay{
+    [PdBase sendBangToReceiver:@"clearDelay"];
+}
+
 
 -(instancetype)initWithFile:(NSString *)pdFile{
     void *patch;

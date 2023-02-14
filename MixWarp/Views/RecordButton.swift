@@ -32,6 +32,7 @@ struct Record: View {
                     })
             )
             .foregroundColor(isOn ? .recordButtonOn : .playRecordOff)
+            .padding()
     }
 }
 

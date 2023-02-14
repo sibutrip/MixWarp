@@ -9,6 +9,9 @@ import Foundation
 
 class ViewModel: ObservableObject {
     var patch = Patch()
+    
+    var pd = PdEngine()
+
     @Published var toggleRecord: Bool = false {
         willSet {
             if self.toggleLoop {

@@ -24,7 +24,7 @@
 -(void)floatTransportSliderEnd:(float)floatValue;
 -(void)floatDelayTime:(float)floatValue;
 -(void)floatDelayAmount:(float)floatValue;
-
+-(void)bangClearDelay;
 
 
 -(instancetype)initWithFile:(NSString *)pdFile;

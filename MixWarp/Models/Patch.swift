@@ -55,4 +55,8 @@ class Patch: ObservableObject {
     func floatDelayAmount(floatValue: Float) {
         patch?.floatDelayAmount(floatValue)
     }
+    
+    func bangClearDelay() {
+        patch?.bangClearDelay()
+    }
 }
