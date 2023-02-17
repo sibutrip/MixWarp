@@ -12,7 +12,7 @@ struct ContentView: View {
     @EnvironmentObject var orientationInfo: OrientationInfo
     
     @StateObject var vm = ViewModel()
-    
+        
     var body: some View {
         if orientationInfo.orientation == .portrait {
             portraitView
@@ -57,7 +57,7 @@ extension ContentView {
                             delayAmount
                         }
                         .padding(.bottom)
-                        ClearButton()
+                        ClearButton(isTapped: $vm.clearDelay)
                     }
                     Spacer()
                         .frame(width: geo.size.width / 5.5)
@@ -103,7 +103,7 @@ extension ContentView {
                     Spacer()
                     Spacer()
                     Spacer()
-                    ClearButton()
+                    ClearButton(isTapped: $vm.clearDelay)
                         .frame(width: geo.size.width / 3)
                     Spacer()
                 }

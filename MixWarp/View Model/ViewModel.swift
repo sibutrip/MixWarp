@@ -77,4 +77,12 @@ class ViewModel: ObservableObject {
             patch.floatDelayAmount(floatValue: delayAmount)
         }
     }
+    
+    @Published var clearDelay: Bool = false{
+        didSet {
+            if clearDelay {
+                patch.bangClearDelay()
+            }
+        }
+    }
 }

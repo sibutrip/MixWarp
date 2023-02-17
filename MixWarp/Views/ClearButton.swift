@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ClearButton: View {
-    @State var isTapped = false
+    @Binding var isTapped: Bool
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 10)
@@ -44,8 +44,15 @@ struct ClearButton: View {
     }
 }
 
+struct ClearButtonDummy: View {
+    @State var isTapped = false
+    var body: some View {
+        ClearButton(isTapped: $isTapped)
+    }
+}
+
 struct ClearButton_Previews: PreviewProvider {
     static var previews: some View {
-        ClearButton()
+        ClearButtonDummy()
     }
 }
