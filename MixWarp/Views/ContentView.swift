@@ -12,7 +12,7 @@ struct ContentView: View {
     @EnvironmentObject var orientationInfo: OrientationInfo
     
     @StateObject var vm = ViewModel()
-        
+    
     var body: some View {
         if orientationInfo.orientation == .portrait {
             portraitView
@@ -47,6 +47,7 @@ extension ContentView {
                         .frame(width: geo.size.width / 3.0)
                     Spacer()
                 }
+                .frame(height: geo.size.height / 6.5)
                 Spacer()
                 HStack {
                     Spacer()
@@ -93,19 +94,36 @@ extension ContentView {
                         Spacer()
                         Spacer()
                         Spacer()
+                        
                         Record(isOn: $vm.toggleRecord)
                             .animation(nil, value: vm.toggleRecord)
+                        //                            .frame(width: geo.size.width / 3.0)
+                        Spacer()
+                        Spacer()
+                        
+                        Spacer()
+                    }
+                    Group {
+
                         Play(isOn: $vm.toggleLoop)
                             .animation(nil, value: vm.toggleLoop)
+//                            .frame(width: geo.size.width / 3.0)
+                        Spacer()
+                        
+                    
+                    
+                   
+                        Spacer()
+                        Spacer()
+                        Spacer()
+                        Spacer()
+                        Spacer()
+                        ClearButton(isTapped: $vm.clearDelay)
+                            .frame(width: geo.size.width / 3)
+                   
+                        
+                        Spacer()
                     }
-                    Spacer()
-                    Spacer()
-                    Spacer()
-                    Spacer()
-                    Spacer()
-                    ClearButton(isTapped: $vm.clearDelay)
-                        .frame(width: geo.size.width / 3)
-                    Spacer()
                 }
             }
             .frame(width: geo.size.width, height: geo.size.height, alignment: .center)

@@ -14,7 +14,10 @@ struct Record: View {
     
     var body: some View {
         Image(systemName: imageName)
-            .font(.system(size: isTapped ? 80 : 88))
+            .resizable()
+            .scaledToFit()
+            .padding(isTapped ? 0 : 5)
+//            .font(.system(size: isTapped ? 80 : 88))
             .animation(.easeInOut(duration: 0.08), value: isTapped)
             .simultaneousGesture(
                 DragGesture(minimumDistance: 0.0)
@@ -32,7 +35,7 @@ struct Record: View {
                     })
             )
             .foregroundColor(isOn ? .recordButtonOn : .playRecordOff)
-            .padding()
+//            .padding()
     }
 }
 
