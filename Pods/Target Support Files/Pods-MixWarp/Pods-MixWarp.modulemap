@@ -1,0 +1,6 @@
+framework module Pods_MixWarp {
+  umbrella header "Pods-MixWarp-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		13885B48C144D1D1B3E54905 /* Pods_PdProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 832537E2C3279DC5E0A0C52C /* Pods_PdProject.framework */; };
 		7419C20A299BCF2D006CD0EC /* ClearButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7419C209299BCF2D006CD0EC /* ClearButton.swift */; };
 		742B74282953426F004E7966 /* PdEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742B74272953426F004E7966 /* PdEngine.swift */; };
 		742B742A29534364004E7966 /* Patch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742B742929534364004E7966 /* Patch.swift */; };
@@ -25,9 +24,12 @@
 		74DE1EE829426621005AFFF3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74DE1EE729426621005AFFF3 /* Preview Assets.xcassets */; };
 		74DE1EF82942736B005AFFF3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DE1EF72942736B005AFFF3 /* ContentView.swift */; };
 		74E75E112953A8820014FB25 /* RecordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E75E102953A8820014FB25 /* RecordButton.swift */; };
+		8C566AA53D14791B30B8C114 /* Pods_MixWarp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6270993A8C8C9ED184681603 /* Pods_MixWarp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F051BABF0E5EC5ED1BA20CA /* Pods-MixWarp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MixWarp.debug.xcconfig"; path = "Target Support Files/Pods-MixWarp/Pods-MixWarp.debug.xcconfig"; sourceTree = "<group>"; };
+		6270993A8C8C9ED184681603 /* Pods_MixWarp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MixWarp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7419C209299BCF2D006CD0EC /* ClearButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearButton.swift; sourceTree = "<group>"; };
 		742B74272953426F004E7966 /* PdEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PdEngine.swift; sourceTree = "<group>"; };
 		742B742929534364004E7966 /* Patch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patch.swift; sourceTree = "<group>"; };
@@ -49,7 +51,7 @@
 		74DE1EE729426621005AFFF3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		74DE1EF72942736B005AFFF3 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		74E75E102953A8820014FB25 /* RecordButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordButton.swift; sourceTree = "<group>"; };
-		832537E2C3279DC5E0A0C52C /* Pods_PdProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PdProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE72F812ABD5E68EAE320B9D /* Pods-MixWarp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MixWarp.release.xcconfig"; path = "Target Support Files/Pods-MixWarp/Pods-MixWarp.release.xcconfig"; sourceTree = "<group>"; };
 		C89BECAB565E82FAD4DA6674 /* Pods-PdProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PdProject.release.xcconfig"; path = "Target Support Files/Pods-PdProject/Pods-PdProject.release.xcconfig"; sourceTree = "<group>"; };
 		E578A526B59AD21CD340BC84 /* Pods-PdProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PdProject.debug.xcconfig"; path = "Target Support Files/Pods-PdProject/Pods-PdProject.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -59,7 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13885B48C144D1D1B3E54905 /* Pods_PdProject.framework in Frameworks */,
+				8C566AA53D14791B30B8C114 /* Pods_MixWarp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +73,8 @@
 			children = (
 				E578A526B59AD21CD340BC84 /* Pods-PdProject.debug.xcconfig */,
 				C89BECAB565E82FAD4DA6674 /* Pods-PdProject.release.xcconfig */,
+				3F051BABF0E5EC5ED1BA20CA /* Pods-MixWarp.debug.xcconfig */,
+				AE72F812ABD5E68EAE320B9D /* Pods-MixWarp.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -163,7 +167,7 @@
 		8CBD7923CFE833A57ED1C7A3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				832537E2C3279DC5E0A0C52C /* Pods_PdProject.framework */,
+				6270993A8C8C9ED184681603 /* Pods_MixWarp.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -186,8 +190,6 @@
 			dependencies = (
 			);
 			name = MixWarp;
-			packageProductDependencies = (
-			);
 			productName = PdProject;
 			productReference = 74DE1EDD29426620005AFFF3 /* MixWarp.app */;
 			productType = "com.apple.product-type.application";
@@ -217,8 +219,6 @@
 				Base,
 			);
 			mainGroup = 74DE1ED429426620005AFFF3;
-			packageReferences = (
-			);
 			productRefGroup = 74DE1EDE29426620005AFFF3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -248,15 +248,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PdProject/Pods-PdProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-MixWarp/Pods-MixWarp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PdProject/Pods-PdProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-MixWarp/Pods-MixWarp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PdProject/Pods-PdProject-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MixWarp/Pods-MixWarp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		835D363B678F5458BCCF379E /* [CP] Check Pods Manifest.lock */ = {
@@ -274,7 +274,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-PdProject-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-MixWarp-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -424,7 +424,7 @@
 		};
 		74DE1EEC29426621005AFFF3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E578A526B59AD21CD340BC84 /* Pods-PdProject.debug.xcconfig */;
+			baseConfigurationReference = 3F051BABF0E5EC5ED1BA20CA /* Pods-MixWarp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -459,12 +459,13 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
+				USER_HEADER_SEARCH_PATHS = "/MixWarp/**";
 			};
 			name = Debug;
 		};
 		74DE1EED29426621005AFFF3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C89BECAB565E82FAD4DA6674 /* Pods-PdProject.release.xcconfig */;
+			baseConfigurationReference = AE72F812ABD5E68EAE320B9D /* Pods-MixWarp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -498,6 +499,7 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "MixWarp/Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
+				USER_HEADER_SEARCH_PATHS = "/MixWarp/**";
 			};
 			name = Release;
 		};
