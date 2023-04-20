@@ -12,6 +12,7 @@ class PdEngine {
     var pd:PdAudioController?
     init() {
         pd = PdAudioController()
+//        pd?.configureRecord(withSampleRate: 48000, inputChannels: 2)
         pd?.configurePlayback(withSampleRate: 48000, inputChannels: 2, outputChannels: 2, inputEnabled: true)
         pd?.isActive = true
     }
