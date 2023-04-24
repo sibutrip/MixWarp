@@ -9,6 +9,8 @@ MixWarp and its developer take your privacy very seriously. Beyond the informati
 If you have any questions or suggestions about my Privacy Policy, do not hesitate to contact me at ctripathy0@gmail.com.
 
 ## How to clone this repository
+This project utilizes the LibPD library. In order to clone the repo, you must also create the necessary submodules
+
 -step 1: git clone
 
 -step 2: git submodule init
